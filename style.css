@@ -1,0 +1,159 @@
+ /* General Styles */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #444;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Gradient Text */
+.text-gradient {
+    background: -webkit-linear-gradient(#007bff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navbar */
+nav .nav-link {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Movie Card Styles */
+.movie-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 3px solid #007bff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.rating i {
+    color: #f1c40f;
+    font-size: 1.2rem;
+}
+
+/* Seat Layout */
+.seat-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seat.selected {
+    background-color: #ffeb3b;
+}
+
+.seat.occupied {
+    background-color: #e74c3c;
+    cursor: not-allowed;
+}
+
+/* Booking Summary */
+.booking-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Enhancements */
+.btn-success {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+}
+
+/* Seat Legend */
+.seat-legend {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.available {
+    background-color: green;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+.occupied {
+    background-color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seat {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .movie-card img {
+        height: 200px;
+    }
+
+    .btn-success {
+        width: 100%;
+    }
+}
